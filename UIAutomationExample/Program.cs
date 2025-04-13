@@ -16,7 +16,6 @@ namespace UIAutomationExample
             Console.WriteLine("Start App");
 
             Process p = Process.Start(appPath);
-
             int retries = 10;
             while (p.MainWindowHandle == IntPtr.Zero && retries > 0)
             {
