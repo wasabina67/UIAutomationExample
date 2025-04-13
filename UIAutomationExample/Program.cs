@@ -7,8 +7,8 @@ namespace UIAutomationExample
 {
     internal class Program
     {
-        private string yourId = "yourId";
-        private string yourPw = "yourPw";
+        private static string yourId = "yourId";
+        private static string yourPw = "yourPw";
 
         static void Main(string[] args)
         {
