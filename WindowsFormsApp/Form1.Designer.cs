@@ -77,19 +77,19 @@
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.Location = new System.Drawing.Point(60, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 33);
+            this.button1.Size = new System.Drawing.Size(86, 33);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Check in";
+            this.button1.Text = "In";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(187, 80);
+            this.button2.Location = new System.Drawing.Point(152, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 33);
+            this.button2.Size = new System.Drawing.Size(86, 33);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Check out";
+            this.button2.Text = "Out";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
