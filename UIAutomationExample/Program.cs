@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
+using System.Windows.Automation;
 
 namespace UIAutomationExample
 {
@@ -14,7 +15,7 @@ namespace UIAutomationExample
             Process p = Process.Start(appPath);
             p.WaitForInputIdle();
 
-            Thread.Sleep(5000);
+            AutomationElement targetWindow = AutomationElement.FromHandle(p.MainWindowHandle);
 
             Console.WriteLine("Exit App");
         }
