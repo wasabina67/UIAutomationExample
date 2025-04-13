@@ -7,6 +7,7 @@ namespace UIAutomationExample
 {
     internal class Program
     {
+        private static string appPath = @"C:\Users\wasab\source\repos\UIAutomationExample\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe";
         private static string yourId = "yourId";
         private static string yourPw = "yourPw";
 
@@ -14,7 +15,6 @@ namespace UIAutomationExample
         {
             Console.WriteLine("Start App");
 
-            string appPath = @"C:\Users\wasab\source\repos\UIAutomationExample\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe";
             Process p = Process.Start(appPath);
 
             int retries = 10;
