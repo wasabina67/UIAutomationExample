@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading;
 
 namespace UIAutomationExample
@@ -7,8 +8,10 @@ namespace UIAutomationExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hello, World!");
+            string appPath = @"C:\Users\wasab\source\repos\UIAutomationExample\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe";
+            Process p = Process.Start(appPath);
+            p.WaitForInputIdle();
+
             Thread.Sleep(5000);
         }
     }
