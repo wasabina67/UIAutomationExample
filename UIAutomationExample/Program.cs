@@ -28,7 +28,6 @@ namespace UIAutomationExample
             // txtPw
             // btnIn
             // btnOut
-            // Close
 
             Thread.Sleep(5000);
 
