@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPw = new System.Windows.Forms.TextBox();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,51 +56,51 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "PW";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox1.Location = new System.Drawing.Point(60, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 31);
-            this.textBox1.TabIndex = 2;
+            this.txtId.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtId.Location = new System.Drawing.Point(60, 6);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(180, 31);
+            this.txtId.TabIndex = 2;
             // 
-            // textBox2
+            // txtPw
             // 
-            this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox2.Location = new System.Drawing.Point(60, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 31);
-            this.textBox2.TabIndex = 3;
+            this.txtPw.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtPw.Location = new System.Drawing.Point(60, 43);
+            this.txtPw.Name = "txtPw";
+            this.txtPw.Size = new System.Drawing.Size(180, 31);
+            this.txtPw.TabIndex = 3;
             // 
-            // button1
+            // btnIn
             // 
-            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(60, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 33);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "In";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIn.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnIn.Location = new System.Drawing.Point(60, 80);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(86, 33);
+            this.btnIn.TabIndex = 4;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnOut
             // 
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(152, 80);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 33);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Out";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnOut.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnOut.Location = new System.Drawing.Point(152, 80);
+            this.btnOut.Name = "btnOut";
+            this.btnOut.Size = new System.Drawing.Size(86, 33);
+            this.btnOut.TabIndex = 5;
+            this.btnOut.Text = "Out";
+            this.btnOut.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 261);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnOut);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.txtPw);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -114,10 +114,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtPw;
+        private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.Button btnOut;
     }
 }
 
