@@ -30,6 +30,16 @@ namespace UIAutomationExample
             // btnOut
             // Close
 
+            Thread.Sleep(5000);
+
+            var close = targetWindow.FindFirst(TreeScope.Descendants,
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "Close"));
+            if (close != null && close.TryGetCurrentPattern(InvokePattern.Pattern, out object closePatternObj))
+            {
+                InvokePattern closePattern = (InvokePattern)closePatternObj;
+                closePattern.Invoke();
+            }
+
             Console.WriteLine("Exit App");
         }
     }
