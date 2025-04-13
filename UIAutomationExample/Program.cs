@@ -13,7 +13,14 @@ namespace UIAutomationExample
 
             string appPath = @"C:\Users\wasab\source\repos\UIAutomationExample\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe";
             Process p = Process.Start(appPath);
-            p.WaitForInputIdle();
+
+            int retries = 10;
+            while (p.MainWindowHandle == IntPtr.Zero && retries > 0)
+            {
+                Thread.Sleep(500);
+                retries--;
+                p.Refresh();
+            }
 
             AutomationElement targetWindow = AutomationElement.FromHandle(p.MainWindowHandle);
 
