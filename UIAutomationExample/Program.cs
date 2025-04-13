@@ -24,6 +24,12 @@ namespace UIAutomationExample
 
             AutomationElement targetWindow = AutomationElement.FromHandle(p.MainWindowHandle);
 
+            // txtId
+            // txtPw
+            // btnIn
+            // btnOut
+            // Close
+
             Console.WriteLine("Exit App");
         }
     }
