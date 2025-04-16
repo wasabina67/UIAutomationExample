@@ -53,15 +53,13 @@ namespace UIAutomationExample
                 }
             } else
             {
-                // f
-            }
-
-            var btnOut = targetWindow.FindFirst(TreeScope.Descendants,
-                new PropertyCondition(AutomationElement.AutomationIdProperty, "btnOut"));
-            if (btnOut != null && btnOut.TryGetCurrentPattern(InvokePattern.Pattern, out object outPatternObj))
-            {
-                InvokePattern outPattern = (InvokePattern)outPatternObj;
-                outPattern.Invoke();
+                var btnOut = targetWindow.FindFirst(TreeScope.Descendants,
+                    new PropertyCondition(AutomationElement.AutomationIdProperty, "btnOut"));
+                if (btnOut != null && btnOut.TryGetCurrentPattern(InvokePattern.Pattern, out object outPatternObj))
+                {
+                    InvokePattern outPattern = (InvokePattern)outPatternObj;
+                    outPattern.Invoke();
+                }
             }
 
             Thread.Sleep(5000);
