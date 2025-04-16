@@ -25,6 +25,17 @@ namespace UIAutomationExample
             }
 
             AutomationElement targetWindow = AutomationElement.FromHandle(p.MainWindowHandle);
+            var txtId = targetWindow.FindFirst(TreeScope.Descendants,
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "txtId"));
+
+            var txtPw = targetWindow.FindFirst(TreeScope.Descendants,
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "txtPw"));
+
+            var btnIn = targetWindow.FindFirst(TreeScope.Descendants,
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "btnIn"));
+
+            var btnOut = targetWindow.FindFirst(TreeScope.Descendants,
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "btnOut"));
 
             // txtId
             // txtPw
