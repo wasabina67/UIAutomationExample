@@ -44,17 +44,16 @@ namespace UIAutomationExample
             const bool flag = true;
             if (flag)
             {
-                // t
+                var btnIn = targetWindow.FindFirst(TreeScope.Descendants,
+                    new PropertyCondition(AutomationElement.AutomationIdProperty, "btnIn"));
+                if (btnIn != null && btnIn.TryGetCurrentPattern(InvokePattern.Pattern, out object inPatternObj))
+                {
+                    InvokePattern inPattern = (InvokePattern)inPatternObj;
+                    inPattern.Invoke();
+                }
             } else
             {
                 // f
-            }
-            var btnIn = targetWindow.FindFirst(TreeScope.Descendants,
-                new PropertyCondition(AutomationElement.AutomationIdProperty, "btnIn"));
-            if (btnIn != null && btnIn.TryGetCurrentPattern(InvokePattern.Pattern, out object inPatternObj))
-            {
-                InvokePattern inPattern = (InvokePattern)inPatternObj;
-                inPattern.Invoke();
             }
 
             var btnOut = targetWindow.FindFirst(TreeScope.Descendants,
