@@ -51,7 +51,8 @@ namespace UIAutomationExample
                     InvokePattern inPattern = (InvokePattern)inPatternObj;
                     inPattern.Invoke();
                 }
-            } else
+            }
+            else
             {
                 var btnOut = targetWindow.FindFirst(TreeScope.Descendants,
                     new PropertyCondition(AutomationElement.AutomationIdProperty, "btnOut"));
