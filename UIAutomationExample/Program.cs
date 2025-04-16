@@ -41,6 +41,8 @@ namespace UIAutomationExample
                 pwPattern.SetValue(yourPw);
             }
 
+            Thread.Sleep(5000);
+
             const bool flag = true;
             if (flag)
             {
