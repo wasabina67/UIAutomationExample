@@ -57,11 +57,6 @@ namespace UIAutomationExample
                 outPattern.Invoke();
             }
 
-            // txtId
-            // txtPw
-            // btnIn
-            // btnOut
-
             Thread.Sleep(5000);
 
             var close = targetWindow.FindFirst(TreeScope.Descendants,
