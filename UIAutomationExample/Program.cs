@@ -41,6 +41,14 @@ namespace UIAutomationExample
                 pwPattern.SetValue(yourPw);
             }
 
+            const bool flag = true;
+            if (flag)
+            {
+                // t
+            } else
+            {
+                // f
+            }
             var btnIn = targetWindow.FindFirst(TreeScope.Descendants,
                 new PropertyCondition(AutomationElement.AutomationIdProperty, "btnIn"));
             if (btnIn != null && btnIn.TryGetCurrentPattern(InvokePattern.Pattern, out object inPatternObj))
